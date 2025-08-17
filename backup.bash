@@ -8,10 +8,10 @@ set -e;
 # MOD_SUBDIR_NAME="CircleOfTheSpores_db7e15fd-b2fc-b159-4bbd-1baab34d8c3a"
 # Look in "C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Projects"
 # for names of mods you have already started
-MOD_SUBDIR_NAME=""
+MOD_SUBDIR_NAME="pf2e-swashbuckler_8e2cb17c-4ef3-1bf6-0946-3336c180f633"
 
 # This is the MinGW64 path to a Steam install of the toolkit
-BG3_DATA="/c/Program Files (x86)/Steam/steamapps/common/Baldurs Gate 3/Data"
+BG3_DATA="/run/media/lukas/0a488598-70f3-48c7-8f50-96b777ed4d1b/Steamlibrary/steamapps/common/Baldurs Gate 3/Data"
 
 # These are set according to "Understanding the Mod Locations", as of Nov 2024, from
 # https://mod.io/g/baldursgate3/r/getting-started-creating-a-new-mod

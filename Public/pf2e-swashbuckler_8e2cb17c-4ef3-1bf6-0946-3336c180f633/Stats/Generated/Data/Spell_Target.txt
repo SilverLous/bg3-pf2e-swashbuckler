@@ -1,0 +1,12 @@
+new entry "Target_Target_BasicFinisher"
+type "SpellData"
+data "SpellType" "Target"
+data "Level" "0"
+data "SpellSchool" "None"
+data "TargetRadius" "1.5"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+data "SpellSuccess" "DealDamage(MainMeleeWeapon+1d4, MainMeleeWeaponDamageType);"
+data "AmountOfTargets" "1"
+data "DisplayName" "h3130307fg75d6g84d6g72bag79f28c0eb1ec;1"
+data "SpellFlags" "IsMelee;IsHarmful;CannotTargetTerrain;CannotTargetItems"
+

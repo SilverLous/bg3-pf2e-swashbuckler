@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="53912403-fe14-4ce0-89aa-96acb1dee21a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a6812af9-cdf1-47f4-8bdd-2ba663fc4866" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="5797a2dd-3106-41fb-8b22-1e704a3aa587" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;Target_BasicFinisher" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectPassives(fd22718f-e29c-45b9-a896-8e0dbed8f331,1,ClassFeat)" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="55aa3808-f6ec-424e-8602-7f6a274fb0b7;4ae96f83-9ef6-4459-a9c3-cf13c0fbb6e0;9b4404fd-870e-4850-b714-82c905707d35;b5028eb3-acc7-4250-b5e1-1c001d4734df" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2ac26375-1e1f-425d-afc2-2de55a574600" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="84573fbf-3e46-4fef-867f-e919720888bf" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Fencer" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="25ff9925-2d6e-40cd-a343-b87bd7c056a7" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="a94958de-9a51-4946-9e13-44cd4dc58a1d" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Braggert" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3a1f6abb-148f-42ac-b4f5-877a45be360e" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="da53b052-39b5-46d1-a70e-702dafbc54bc" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Gymnast" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4943a3f3-27d0-479f-b946-f6afbdaea497" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="bdac4520-864f-458e-8a05-b107a283497e" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Battledancer" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

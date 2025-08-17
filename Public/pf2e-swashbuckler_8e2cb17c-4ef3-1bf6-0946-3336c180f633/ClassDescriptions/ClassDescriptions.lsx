@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="10"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassHotbarColumns" type="int32" value="5"/>
+                    <attribute id="CommonHotbarColumns" type="int32" value="9"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd8292e51g81efg0a0bgeda7gb94c16b02481" version="1"/>
+                    <attribute id="HpPerLevel" type="int32" value="10"/>
+                    <attribute id="ItemsHotbarColumns" type="int32" value="2"/>
+                    <attribute id="Name" type="FixedString" value="Swashbuckler"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="he605654cgabcdgca31g99d2g9b1805dcf7f3" version="1"/>
+                    <attribute id="UUID" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7b8911d2g0c45g287dg8be6g9ca65d27ed12" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Fencer"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="84573fbf-3e46-4fef-867f-e919720888bf"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h142e836bga87dgd7a8g2198gf70c5d767757" version="1"/>
+                    <attribute id="UUID" type="guid" value="4ae96f83-9ef6-4459-a9c3-cf13c0fbb6e0"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5f8a860fga106ge0d3g0263gc3f0176d9f5a" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Battledancer"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="bdac4520-864f-458e-8a05-b107a283497e"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="he6d929c6g16f6g3125gc655g3e202c421035" version="1"/>
+                    <attribute id="UUID" type="guid" value="9b4404fd-870e-4850-b714-82c905707d35"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he5766791g9677gc8b5g6cd5g79e84aaaa48d" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Gymnast"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="da53b052-39b5-46d1-a70e-702dafbc54bc"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="hab2bf3c5g5b7eg8d9dg0037g312b14c38a51" version="1"/>
+                    <attribute id="UUID" type="guid" value="b5028eb3-acc7-4250-b5e1-1c001d4734df"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf2058f69g7c75gcddfg12c8g8c895bddf7e7" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Braggart"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="a94958de-9a51-4946-9e13-44cd4dc58a1d"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="hae4bf0dfgb65dgd083g903agc8bc5dfe08f6" version="1"/>
+                    <attribute id="UUID" type="guid" value="55aa3808-f6ec-424e-8602-7f6a274fb0b7"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

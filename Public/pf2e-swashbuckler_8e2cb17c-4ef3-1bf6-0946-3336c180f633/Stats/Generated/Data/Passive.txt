@@ -1,0 +1,5 @@
+new entry "BasicFinisher"
+type "PassiveData"
+data "DisplayName" "h11aee383gc7cdgf813ga50dg2e221b824f60;1"
+data "Boosts" "UnlockSpell(Target_BasicFinisher);"
+
