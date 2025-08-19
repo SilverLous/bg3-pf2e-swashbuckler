@@ -1,5 +1,240 @@
-new entry "BasicFinisher"
+new entry "ConfidentFinisher"
 type "PassiveData"
-data "DisplayName" "h11aee383gc7cdgf813ga50dg2e221b824f60;1"
-data "Boosts" "UnlockSpell(Target_BasicFinisher);"
+data "DisplayName" "h11aee383gc7cdgf813ga50dg2e221b824f60;2"
+data "Description" "ha464d8d5g00e4g08e2g7821gd70133496857;1"
+data "TooltipUseCosts" "ActionPoint:1"
+data "Icon" "Action_Cleave_New"
+data "Boosts" "UnlockSpell(Target_ConfidentFinisher);"
+
+new entry "AfterYou"
+type "PassiveData"
+data "DisplayName" "h8135d38fg4f64g36e5gf938gc052956aca7b;1"
+data "Properties" "IsToggled"
+data "Boosts" "Initiative(-99);"
+data "StatsFunctorContext" "OnCombatStarted"
+data "StatsFunctors" "ApplyStatus(Panache,100,-1)
+"
+
+new entry "RetreatingFinisher"
+type "PassiveData"
+data "DisplayName" "h4b892119g07bag94cbg4afege431477b5220;1"
+
+new entry "EvenTheOdds"
+type "PassiveData"
+data "DisplayName" "h84c02cb6g493eg0861gb80ag6b9a9fee0f9b;1"
+data "Boosts" "UnlockSpell(Shout_EvenTheOdds);"
+
+new entry "UnbalancingFinisher"
+type "PassiveData"
+data "DisplayName" "h17fe2e6bg1c24g6735g94a3gee95014ab727;1"
+
+new entry "DastadrlyDash"
+type "PassiveData"
+data "DisplayName" "h9b33aa2egaefcg07ffg5329g94bccb4e6961;1"
+data "TooltipUseCosts" "ActionPoint:1"
+data "Icon" "PassiveFeature_RelentlessAvenger"
+data "Boosts" "UnlockSpell(Shout_DastardlyDash);"
+
+new entry "ImpalingFinisher"
+type "PassiveData"
+data "DisplayName" "hdb79a465gc173g62eegf72dga3198afbe6f3;1"
+data "Boosts" "UnlockSpell(Target_ImpalingFinisher);"
+
+new entry "LeadingDance"
+type "PassiveData"
+data "DisplayName" "h6bbd5acdgf443gf782g0411g41d0cd4ea74a;1"
+
+new entry "CombinationFinisher"
+type "PassiveData"
+data "DisplayName" "hd0eb8952g9736g05b2g19f1g0ae36102349a;1"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "SpellId('Target_ConfidentFinisher');"
+data "StatsFunctors" "IF(HasStatus('MAP_PENALTY_2ND')):AdjustRoll(1);
+IF(HasStatus('MAP_PENALTY_3RD')):AdjustRoll(1);"
+
+new entry "BleedingFinisher"
+type "PassiveData"
+data "DisplayName" "hab93bb7ag1bf8g136bg78c0g77a1c8d7824e;1"
+data "Boosts" "UnlockSpell(Target_BleedingFinisher);"
+
+new entry "DualFinisher"
+type "PassiveData"
+data "DisplayName" "he5175ec8g54bfg4adbgb585gdab6b17f004a;1"
+
+new entry "StunningFinisher"
+type "PassiveData"
+data "DisplayName" "h9bb19edcg5605g9940g4de7g9087aa0c1630;1"
+
+new entry "BucklerDance"
+type "PassiveData"
+data "DisplayName" "ha010aefbgaf63ga484g0a5dg0589b2edb5e8;1"
+data "TooltipUseCosts" "ActionPoint:1"
+data "Boosts" "UnlockSpell(Shout_BucklerDance);"
+
+new entry "DazzlingDisplay"
+type "PassiveData"
+data "DisplayName" "h36944575gb985gb9a0g200fg6edcabc16e2d;2"
+
+new entry "DerringDo"
+type "PassiveData"
+data "DisplayName" "h16c6fb2bgb10dg6029g14aaga4891922a0a3;1"
+
+new entry "ReflexiveRiposte"
+type "PassiveData"
+data "DisplayName" "h684dbff9gdecagc762gc210g1240053128b7;2"
+
+new entry "StumblingFinisher"
+type "PassiveData"
+data "DisplayName" "hf33f5755gbbdbgbc8cg8684ga7cd43684b37;1"
+
+new entry "TargetingFinisher"
+type "PassiveData"
+data "DisplayName" "h4a8657d6g2a92g8169gf858gf180ef99a101;1"
+
+new entry "CatUsedToDisappointment"
+type "PassiveData"
+data "DisplayName" "h2d12701dg42fbg21d9g7065ge598ce9d2e44;1"
+data "Boosts" "UnlockInterrupt(Interrupt_CatUsedToDisappointment);"
+
+new entry "MobileFinisher"
+type "PassiveData"
+data "DisplayName" "h337f41dfg2b8agc38fg3b78g60406f603dc1;1"
+
+new entry "PerfectFinisher"
+type "PassiveData"
+data "DisplayName" "h075aa4afg92d8gca32g772cgbbb04467b78b;1"
+
+new entry "EnjoyTheShow"
+type "PassiveData"
+data "DisplayName" "hedb2a924g0e8ag72ecg55ccgfbeb54f786d9;1"
+
+new entry "BonMot"
+type "PassiveData"
+data "DisplayName" "hbe877a22g85abg26a4gbd82g0b8550e77c82;1"
+
+new entry "GoadingFeint"
+type "PassiveData"
+data "DisplayName" "h41807db5g7da8g87d1gab34g660efe90e049;1"
+
+new entry "VivaciousSpeed"
+type "PassiveData"
+data "DisplayName" "h9c16efa0g12b0gb3acg874egc12b10528462;1"
+data "DescriptionParams" "Level"
+data "Properties" "Highlighted"
+data "BoostConditions" "not HasStatus('Panache');"
+data "Boosts" "ActionResource(Movement,0.75,0);"
+
+new entry "VivaciousSpeed_Panache"
+type "PassiveData"
+using "VivaciousSpeed"
+data "BoostConditions" "HasStatus('Panache');"
+data "Boosts" "ActionResource(Movement,1.5,0);"
+
+new entry "VivaciousSpeed_7"
+type "PassiveData"
+using "VivaciousSpeed"
+data "Boosts" "ActionResource(Movement,1.5,0);"
+
+new entry "VivaciousSpeed_7_Panache"
+type "PassiveData"
+using "VivaciousSpeed_Panache"
+data "Boosts" "ActionResource(Movement,3,0);"
+
+new entry "VivaciousSpeed_11"
+type "PassiveData"
+using "VivaciousSpeed"
+data "Boosts" "ActionResource(Movement,2.25,0);"
+
+new entry "VivaciousSpeed_11_Panache"
+type "PassiveData"
+using "VivaciousSpeed_Panache"
+data "Boosts" "ActionResource(Movement,4.5,0);"
+
+new entry "Level1Feats"
+type "PassiveData"
+using "FeatPrerequisites"
+data "DisplayName" "hfe640f6bge81dg6472g9c76g987d556d0366;1"
+data "Description" "h23f01958g98a0ga884ge761g9b0555c84bcb;1"
+
+new entry "Level2Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "h9d99893cgddb1g2271g889eg9f273285f75b;1"
+
+new entry "Level4Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "h8ffc7be5gd6e9g13ccgb185ga837730594e3;1"
+
+new entry "Level6Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "h818be67bgb087gd478g07e6g067b6a08c778;1"
+
+new entry "Level8Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "hb77f8fdcg3dc7g9ef2ga24cg902cdfa1a3c9;1"
+
+new entry "Level10Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "hfa33c277g6d3cg744cg2aa0gc6aa78f97093;1"
+
+new entry "Level12Feats"
+type "PassiveData"
+using "Level1Feats"
+data "DisplayName" "h6f3aebc0g3790g270cg5e04g1027bec43748;1"
+
+new entry "FlashyDodge"
+type "PassiveData"
+using "NimbleDodge"
+data "Description" "h113ce892g7ecdg3256g37ceg18264912a618;1"
+
+new entry "ElegantBuckler"
+type "PassiveData"
+data "DisplayName" "heb5b2d2dgef0ag0314gea9agf8853d70c236;1"
+data "Description" "hfde7e1d2g21c8ga1e8gb395gf89de4b571ec;1"
+
+new entry "OneForAll"
+type "PassiveData"
+data "DisplayName" "hf6580f11gd977gf84fgc0c6g88705633e416;1"
+data "Boosts" "UnlockSpell(Target_OneForAll);UnlockInterrupt(Interrupt_OneForAll);"
+
+new entry "DisarmingFlair"
+type "PassiveData"
+data "DisplayName" "h10cd7762g95a2g579dg9904g6425ab04a602;1"
+
+new entry "BardDed"
+type "PassiveData"
+data "DisplayName" "h138e85c5g8c17g1d90gb8d3g4ed762be7e1c;1"
+
+new entry "VersPerf"
+type "PassiveData"
+using "VersatilePerformance"
+data "DisplayName" "he04a59c1gf6degcf3bg3507g04ebd9dd6d52;1"
+
+new entry "CharmedLife"
+type "PassiveData"
+data "DisplayName" "hbd2dcf82gc79bgfcc6g2df3g7107eeda7cfc;2"
+data "Boosts" "UnlockInterrupt(Interrupt_CharmedLife);"
+
+new entry "QuickJumpAcro"
+type "PassiveData"
+using "QuickJump"
+data "DisplayName" "h5c9ea993ga315gd535gde47g18c2e92cb048;1"
+data "Description" "h9b72a6f7g5b7bgee28gf11ag6ac4bbcd2443;1"
+data "StatsFunctorContext" "OnCast"
+data "Conditions" "SpellCategoryIs(SpellCategory.Jump);"
+data "StatsFunctors" "ApplyStatus(Panache,100,-1)"
+
+new entry "GuardiansDeflection"
+type "PassiveData"
+data "DisplayName" "h34c0ecd9g5be3g382eg5dc9gea864ca42d3b;1"
+
+new entry "AgileManeuvers"
+type "PassiveData"
+using "CombinationFinisher"
+data "DisplayName" "h7f0529b9gacb1g889bgc922g474179a3374e;1"
+data "Conditions" "SpellId('Target_Grapple') or SpellId('Target_Trip') or SpellId('Target_Disarm') or SpellId('Target_Shove');"
 

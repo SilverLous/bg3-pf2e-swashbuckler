@@ -50,6 +50,14 @@
                     <attribute id="ShortName" type="TranslatedString" handle="hae4bf0dfgb65dgd083g903agc8bc5dfe08f6" version="1"/>
                     <attribute id="UUID" type="guid" value="55aa3808-f6ec-424e-8602-7f6a274fb0b7"/>
                 </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4e4e12ebg771agefd0gfb93gb88ed04bd823" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Swashbuckler"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h243c680bg63afg66f2g4536g76ddbe29c313" version="1"/>
+                    <attribute id="UUID" type="guid" value="80e5082c-949d-4485-8540-03f424910ea1"/>
+                </node>
             </children>
         </node>
     </region>

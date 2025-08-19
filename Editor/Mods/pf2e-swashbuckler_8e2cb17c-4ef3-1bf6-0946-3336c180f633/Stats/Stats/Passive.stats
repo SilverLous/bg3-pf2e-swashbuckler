@@ -4,9 +4,380 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
-        <field name="Name" type="NameTableFieldDefinition" value="BasicFinisher" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11aee383gc7cdgf813ga50dg2e221b824f60" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BasicFinisher);" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConfidentFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11aee383gc7cdgf813ga50dg2e221b824f60" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConfidentFinisher);" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha464d8d5g00e4g08e2g7821gd70133496857" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4deff955-4f28-4240-90f1-87a549390ab4" />
+        <field name="Name" type="NameTableFieldDefinition" value="AfterYou" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8135d38fg4f64g36e5gf938gc052956aca7b" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(-99);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(Panache,100,-1)&#xD;&#xA;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dab0ff86-73d5-481a-b56c-002d0d62f135" />
+        <field name="Name" type="NameTableFieldDefinition" value="RetreatingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b892119g07bag94cbg4afege431477b5220" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="058728ea-a942-4032-87b0-a70eb3d75da2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EvenTheOdds" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h84c02cb6g493eg0861gb80ag6b9a9fee0f9b" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_EvenTheOdds);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a3dac92-fd85-4e36-9179-91084c6e9d2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnbalancingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17fe2e6bg1c24g6735g94a3gee95014ab727" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8fa0abc-da43-4da1-b911-3ac0a8a13ca9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DastadrlyDash" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b33aa2egaefcg07ffg5329g94bccb4e6961" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_RelentlessAvenger" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DastardlyDash);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13df3228-c123-4021-946f-fac065d0de58" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImpalingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdb79a465gc173g62eegf72dga3198afbe6f3" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ImpalingFinisher);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9f5e4fb-934a-4844-b1d4-7a16ad516ef3" />
+        <field name="Name" type="NameTableFieldDefinition" value="LeadingDance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bbd5acdgf443gf782g0411g41d0cd4ea74a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35f1944d-03aa-447d-986b-7ea15736b827" />
+        <field name="Name" type="NameTableFieldDefinition" value="CombinationFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0eb8952g9736g05b2g19f1g0ae36102349a" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_ConfidentFinisher');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('MAP_PENALTY_2ND')):AdjustRoll(1);&#xD;&#xA;IF(HasStatus('MAP_PENALTY_3RD')):AdjustRoll(1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41f1a40a-6cf4-45cd-8f91-9b3d4334a1a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hab93bb7ag1bf8g136bg78c0g77a1c8d7824e" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BleedingFinisher);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81e991cc-cd6d-45c4-807c-1fb61b1c1a8b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DualFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5175ec8g54bfg4adbgb585gdab6b17f004a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a069befe-526d-4642-87e9-f42245b45946" />
+        <field name="Name" type="NameTableFieldDefinition" value="StunningFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9bb19edcg5605g9940g4de7g9087aa0c1630" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b03683a-dc41-4757-9dc5-7741d9c87bb6" />
+        <field name="Name" type="NameTableFieldDefinition" value="BucklerDance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha010aefbgaf63ga484g0a5dg0589b2edb5e8" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BucklerDance);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db2d0651-b976-45c9-86bb-e0ac026946ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDisplay" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h36944575gb985gb9a0g200fg6edcabc16e2d" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84ea9e5f-ee3e-48c5-98f0-48e188f1e756" />
+        <field name="Name" type="NameTableFieldDefinition" value="DerringDo" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16c6fb2bgb10dg6029g14aaga4891922a0a3" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e575a2e2-d7bf-4a21-abb6-52c4068849bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReflexiveRiposte" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h684dbff9gdecagc762gc210g1240053128b7" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8efa12ed-358b-4e5e-a58c-5e74735fa3f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="StumblingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf33f5755gbbdbgbc8cg8684ga7cd43684b37" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f1a0ebf-e1bf-4fe8-a028-896bbf034095" />
+        <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a8657d6g2a92g8169gf858gf180ef99a101" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca6bdefb-6149-4f34-978e-5d3a9fc82cdd" />
+        <field name="Name" type="NameTableFieldDefinition" value="CatUsedToDisappointment" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d12701dg42fbg21d9g7065ge598ce9d2e44" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CatUsedToDisappointment);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c662445e-595b-49c4-9303-e9321b530b40" />
+        <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h337f41dfg2b8agc38fg3b78g60406f603dc1" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="277b8200-be73-4c56-b9a0-a9dbdb7134d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="PerfectFinisher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h075aa4afg92d8gca32g772cgbbb04467b78b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c332f608-4c6e-41f0-b7b5-5811e0a587e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnjoyTheShow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hedb2a924g0e8ag72ecg55ccgfbeb54f786d9" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b10177e1-585f-4ee8-b98b-b43e56e19f64" />
+        <field name="Name" type="NameTableFieldDefinition" value="BonMot" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbe877a22g85abg26a4gbd82g0b8550e77c82" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a6f913c-a22a-4f77-9481-7e90aab5e3f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="GoadingFeint" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41807db5g7da8g87d1gab34g660efe90e049" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35510af1-67da-4965-8940-38df59f745c5" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c16efa0g12b0gb3acg874egc12b10528462" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,0.75,0);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Level" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('Panache');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01385c12-e630-40de-8022-23c9eaccf8df" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed_Panache" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35510af1-67da-4965-8940-38df59f745c5" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasStatus('Panache');" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7562620-a30a-4d34-98d1-29f4beefda42" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35510af1-67da-4965-8940-38df59f745c5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23ef13f4-93be-41c4-a34e-bc839900753e" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed_7_Panache" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01385c12-e630-40de-8022-23c9eaccf8df" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76b91668-bf5e-4478-8b9a-c80811b36dd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35510af1-67da-4965-8940-38df59f745c5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,2.25,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5038bcb-5011-457e-8744-b694e8d70a8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed_11_Panache" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01385c12-e630-40de-8022-23c9eaccf8df" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,4.5,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level1Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b42f0bf-d565-4993-b30f-0f5ada1c5bff" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe640f6bge81dg6472g9c76g987d556d0366" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23f01958g98a0ga884ge761g9b0555c84bcb" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad540736-0d2a-4005-b69f-80e553131286" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level2Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d99893cgddb1g2271g889eg9f273285f75b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c518f15b-1bb8-42f0-8946-6ac0ba3baf0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level4Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ffc7be5gd6e9g13ccgb185ga837730594e3" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f175efd-ed4d-486d-8b7c-c2961a4912ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level6Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h818be67bgb087gd478g07e6g067b6a08c778" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55c9324f-1879-47b5-ab19-ddf822dd95ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level8Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb77f8fdcg3dc7g9ef2ga24cg902cdfa1a3c9" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60761c37-7c28-465b-9567-e39acd39488d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level10Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa33c277g6d3cg744cg2aa0gc6aa78f97093" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5ee60d2-1c77-470b-944c-99732d9876a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Level12Feats" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de165b6-9c28-4b75-ae97-28ad52b40dc3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f3aebc0g3790g270cg5e04g1027bec43748" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="374022d0-b95d-4901-b33b-162e4af50000" />
+        <field name="Name" type="NameTableFieldDefinition" value="FlashyDodge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b591309-f983-4452-a964-60b3824adbd0" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h113ce892g7ecdg3256g37ceg18264912a618" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03d6f090-4c29-4680-b8a9-9f9dbc14649e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElegantBuckler" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heb5b2d2dgef0ag0314gea9agf8853d70c236" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfde7e1d2g21c8ga1e8gb395gf89de4b571ec" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0b085a0e-3c69-42a5-ba95-8dc9127c8085" />
+        <field name="Name" type="NameTableFieldDefinition" value="OneForAll" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6580f11gd977gf84fgc0c6g88705633e416" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_OneForAll);UnlockInterrupt(Interrupt_OneForAll);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef61e853-0b86-41eb-b9c4-79b402d08e5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="DisarmingFlair" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10cd7762g95a2g579dg9904g6425ab04a602" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9209b113-cf06-4858-a495-1299010271bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BardDed" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h138e85c5g8c17g1d90gb8d3g4ed762be7e1c" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5228de1-70a6-40ae-967d-3af4c4e97dcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="VersPerf" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a62878f2-12af-47a0-8bcd-7e43786349d0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he04a59c1gf6degcf3bg3507g04ebd9dd6d52" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26c1ac13-1124-4ddd-b40d-14411782d78a" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmedLife" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd2dcf82gc79bgfcc6g2df3g7107eeda7cfc" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CharmedLife);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82da29c6-3471-46fc-a0ac-f7726116fe7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="QuickJumpAcro" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61153bad-c9b5-4eb0-afc0-0fb843046403" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c9ea993ga315gd535gde47g18c2e92cb048" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b72a6f7g5b7bgee28gf11ag6ac4bbcd2443" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellCategoryIs(SpellCategory.Jump);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(Panache,100,-1)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b36548e4-a9fa-4894-bb0b-55e22bd86a5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="GuardiansDeflection" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34c0ecd9g5be3g382eg5dc9gea864ca42d3b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d5a6f0f-c021-45f3-9124-0ac82f7bef6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="AgileManeuvers" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35f1944d-03aa-447d-986b-7ea15736b827" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f0529b9gacb1g889bgc922g474179a3374e" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Grapple') or SpellId('Target_Trip') or SpellId('Target_Disarm') or SpellId('Target_Shove');" />
       </fields>
     </stat_object>
   </stat_objects>

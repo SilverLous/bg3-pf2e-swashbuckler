@@ -62,5 +62,16 @@
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="a94958de-9a51-4946-9e13-44cd4dc58a1d" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="80e5082c-949d-4485-8540-03f424910ea1" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Swashbuckler" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e4e12ebg771agefd0gfb93gb88ed04bd823" version="1" />
+        <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="h243c680bg63afg66f2g4536g76ddbe29c313" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="5797a2dd-3106-41fb-8b22-1e704a3aa587" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9cc73ae5-ec43-41ac-ade2-250df9f1a1fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Panache" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h29524001gad22g8575ga1dfg9b22ffae3e15" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="0" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27dd4cfeg2782ge5e4gd3fag48c617618bb5" version="1" />
+        <field name="Toggle" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cadca12f-00fc-4f4a-a1d1-a498901340e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisherDamage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a6686bd-4af4-45b9-9786-4ee529d54681" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Slashing);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4808e237-82e3-4dda-b7c1-2eb4aba8ea2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisherDamageCrit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cadca12f-00fc-4f4a-a1d1-a498901340e8" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(8d6,Slashing);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="390d1207-b194-4507-b05b-8aec788e7d73" />
+        <field name="Name" type="NameTableFieldDefinition" value="OneForAllBoost" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0cf9b1agb517g42d7g0476g7c5df6aa1391" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4cfaafc-ce59-45dd-8851-4f2f813e84ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="DastardlyDashEffect" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0b58214c-f3f1-49de-afcd-4a2293e5c0f3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6cc46d2bgf8a5gce0dg999bg1f597e25656c" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DastardlyDash);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

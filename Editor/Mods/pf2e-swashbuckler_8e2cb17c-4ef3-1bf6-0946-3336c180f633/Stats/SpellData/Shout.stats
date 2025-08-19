@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0fe4e73-5c17-4d0e-b198-f1d76076f533" />
+        <field name="Name" type="NameTableFieldDefinition" value="EvenTheOdds" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="87c0b5f9-8dc4-45fd-a036-63bf1ed5d13d" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Panache,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heee0b91ag17d7gb3e8ga224g63649814e4f9" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Even" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(Panache,100,1)" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value=" HasEnemyWithinRange('SG_Incapacitated', 3, nil, 2, context.Target, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ee8b3a0-9728-41b0-a97b-90d4d4b7f5d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="DastardlyDash" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e05f2648-1942-43d3-92a6-a5ce06a326d9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIDE,100,1);ApplyStatus(SELF,DastardlyDashEffect,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0725aa6agfacag8ab4gcdb7g3e49905eb487" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="609a5877-8fd5-436d-bb44-aad570073e18" />
+        <field name="Name" type="NameTableFieldDefinition" value="BucklerDance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce690116-f4c1-44f4-9918-915584540bdf" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RAISE_SHIELD,100,20);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b307b77g26edg0f8fg6ff4g84bc5786ee6c" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="IsOffHandSlotEmpty() or HasShieldEquipped()" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

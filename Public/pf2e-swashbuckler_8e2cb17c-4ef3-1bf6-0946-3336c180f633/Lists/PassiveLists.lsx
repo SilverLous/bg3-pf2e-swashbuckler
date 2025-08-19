@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 1 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="e005b527-f8d0-4923-8873-e4ef2c9e7097"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 2 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="8f5b7a88-f470-4899-9f4c-9c10c9082d26"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 4 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level4Feats,DastadrlyDash,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="ac71c18c-be06-4cdc-a5ee-4971b23a19c9"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 6 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level6Feats,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="7e133205-cd1c-4b2b-a99c-3160483354e9"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 8 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="5396d516-c664-4add-b4ab-3c327e9f2fcb"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 10 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,TargetingFinisher,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="d4c56b2a-8a95-42a6-9dcf-c4089e395336"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Swashbuckler Level 12 Class Feats"/>
+                    <attribute id="Passives" type="LSString" value="FeatPrerequisites,Level12Feats,CatUsedToDisappointment,MobileFinisher,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,TargetingFinisher,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll"/>
+                    <attribute id="UUID" type="guid" value="16d1838d-1fb0-4a40-8201-a92ef5321143"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
