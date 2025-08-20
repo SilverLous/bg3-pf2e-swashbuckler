@@ -40,14 +40,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d4c56b2a-8a95-42a6-9dcf-c4089e395336" />
         <field name="Name" type="NameTableFieldDefinition" value="Swashbuckler Level 10 Class Feats" />
-        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,TargetingFinisher,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AgileManeuvers,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,GuardiansDeflection,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,CharmedLife,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AgileManeuvers,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,GuardiansDeflection,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,CharmedLife,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16d1838d-1fb0-4a40-8201-a92ef5321143" />
         <field name="Name" type="NameTableFieldDefinition" value="Swashbuckler Level 12 Class Feats" />
-        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Level12Feats,CatUsedToDisappointment,MobileFinisher,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,TargetingFinisher,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AgileManeuvers,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,GuardiansDeflection,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,CharmedLife,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Level12Feats,CatUsedToDisappointment,MobileFinisher,Level10Feats,BucklerDance,DazzlingDisplay,DerringDo,ReflexiveRiposte,Level8Feats,BleedingFinisher,DualFinisher,StunningFinisher,Level6Feats,AgileManeuvers,AttackOfOpportunity,CombinationFinisher,Level4Feats,DastadrlyDash,GuardiansDeflection,ImpalingFinisher,LeadingDance,Level2Feats,AfterYou,CharmedLife,EnjoyTheShow,RetreatingFinisher,EvenTheOdds,UnbalancingFinisher,Level1Feats,CharmedLife,FlashyDodge,GoadingFeint,ElegantBuckler,DisarmingFlair,YoureNext,OneForAll" />
       </fields>
     </stat_object>
   </stat_objects>

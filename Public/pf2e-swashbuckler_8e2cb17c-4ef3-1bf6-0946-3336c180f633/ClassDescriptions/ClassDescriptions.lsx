@@ -9,6 +9,7 @@
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
                     <attribute id="ClassHotbarColumns" type="int32" value="5"/>
                     <attribute id="CommonHotbarColumns" type="int32" value="9"/>
+                    <attribute id="Description" type="TranslatedString" handle="heecd5e29ge18fge5ddg4b3dg99b83bad1f8d" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="hd8292e51g81efg0a0bgeda7gb94c16b02481" version="1"/>
                     <attribute id="HpPerLevel" type="int32" value="10"/>
                     <attribute id="ItemsHotbarColumns" type="int32" value="2"/>
@@ -19,6 +20,7 @@
                     <attribute id="UUID" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h53275543ge59fg314ag3749g836bc02798bf" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h7b8911d2g0c45g287dg8be6g9ca65d27ed12" version="1"/>
                     <attribute id="Name" type="FixedString" value="Fencer"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
@@ -27,6 +29,7 @@
                     <attribute id="UUID" type="guid" value="4ae96f83-9ef6-4459-a9c3-cf13c0fbb6e0"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hc8b91ce0g5dcdge5fdg90fbg45e2e7e31323" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h5f8a860fga106ge0d3g0263gc3f0176d9f5a" version="1"/>
                     <attribute id="Name" type="FixedString" value="Battledancer"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
@@ -35,6 +38,7 @@
                     <attribute id="UUID" type="guid" value="9b4404fd-870e-4850-b714-82c905707d35"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h87d16bfdgc5c4g935bg4a49g41992a971a34" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="he5766791g9677gc8b5g6cd5g79e84aaaa48d" version="1"/>
                     <attribute id="Name" type="FixedString" value="Gymnast"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
@@ -43,6 +47,7 @@
                     <attribute id="UUID" type="guid" value="b5028eb3-acc7-4250-b5e1-1c001d4734df"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h75e06855g4f3cg9e33ga360g4f749d5212d6" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="hf2058f69g7c75gcddfg12c8g8c895bddf7e7" version="1"/>
                     <attribute id="Name" type="FixedString" value="Braggart"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
@@ -59,18 +64,20 @@
                     <attribute id="UUID" type="guid" value="80e5082c-949d-4485-8540-03f424910ea1"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="heefbf8a6g42a3ge2f5gfe95g7e636e461b45" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h8313c119gc0d4g40a8g9b35g14e16e3779cb" version="1"/>
                     <attribute id="Name" type="FixedString" value="Wit"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="79b2f557-1c0b-46e2-8832-279fa2f0639d"/>
                     <attribute id="ShortName" type="TranslatedString" handle="hd639b370ged4egf79fgccbeg073cd7bb6c85" version="1"/>
                     <attribute id="UUID" type="guid" value="efc337a7-fc5c-449a-b44f-0325cca9829f"/>
                 </node>
                 <node id="ClassDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h68cc17c1g45e1g1f17g59bfg4d1d5bd43f7b" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="hbffcff22g9264g2f3ag45d8gcc4c44466259" version="1"/>
                     <attribute id="Name" type="FixedString" value="DebugSwashbuckler"/>
                     <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="79b2f557-1c0b-46e2-8832-279fa2f0639d"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2"/>
                     <attribute id="ShortName" type="TranslatedString" handle="h662a23f8ge28agd1bag6d8bg42cabf05493f" version="1"/>
                     <attribute id="UUID" type="guid" value="b8b4b113-8649-49d7-a4d3-4310522f19de"/>
                 </node>

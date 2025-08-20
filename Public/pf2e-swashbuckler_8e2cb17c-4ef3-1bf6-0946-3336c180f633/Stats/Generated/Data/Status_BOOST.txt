@@ -59,6 +59,28 @@ data "OnApplyFunctors" "RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(
 new entry "EffectFinisherUsed"
 type "StatusData"
 data "StatusType" "BOOST"
+data "DisplayName" "h2e6c83bdg4ee5gc8bcgc169gaba072f7da4f;1"
 data "TickType" "EndTurn"
 data "Boosts" "RollBonus(Attack,-99);Skill(Athletics,-99);"
+
+new entry "Stunning_Finisher_Effect"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DAZING_BLOW"
+data "OnApplySuccess" "IF(IsCritical()):ApplyStatus(STUNNED3,100,1)
+IF(not IsCritical()):ApplyStatus(STUNNED1,100,1)"
+data "OnApplyFail" "ApplyStatus(STUNNED1,100,0)"
+
+new entry "MobileFinisherEffect"
+type "StatusData"
+data "StatusType" "BOOST"
+using "DastardlyDashEffect"
+data "DisplayName" "h9f0380e9g29c7gc4adgbc74g7aecd77a7b6a;1"
+data "Boosts" "UnlockSpell(Target_MobileFinisher);"
+
+new entry "BonMotEffect"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h498a0161ge6d1g6f28g0384g022bfad8978c;1"
+data "Boosts" "RollBonus(RawAbility,-4,Wisdom);"
 

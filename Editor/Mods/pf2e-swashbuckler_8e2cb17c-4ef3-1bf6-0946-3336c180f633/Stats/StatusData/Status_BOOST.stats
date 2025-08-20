@@ -81,6 +81,33 @@
         <field name="Name" type="NameTableFieldDefinition" value="EffectFinisherUsed" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-99);Skill(Athletics,-99);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e6c83bdg4ee5gc8bcgc169gaba072f7da4f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ca1b7c9-6938-4c70-b83b-72fae2f16156" />
+        <field name="Name" type="NameTableFieldDefinition" value="Stunning_Finisher_Effect" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70623139-2f32-4c28-8f9a-48f1356fe2be" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(STUNNED3,100,1)&#xD;&#xA;IF(not IsCritical()):ApplyStatus(STUNNED1,100,1)" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(STUNNED1,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bfeb113-f434-4468-88c8-79c87a0b221c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MobileFinisherEffect" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f4cfaafc-ce59-45dd-8851-4f2f813e84ff" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9f0380e9g29c7gc4adgbc74g7aecd77a7b6a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MobileFinisher);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71b56af5-0d7b-4998-8164-82154cd3e66b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BonMotEffect" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h498a0161ge6d1g6f28g0384g022bfad8978c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(RawAbility,-4,Wisdom);" />
       </fields>
     </stat_object>
   </stat_objects>

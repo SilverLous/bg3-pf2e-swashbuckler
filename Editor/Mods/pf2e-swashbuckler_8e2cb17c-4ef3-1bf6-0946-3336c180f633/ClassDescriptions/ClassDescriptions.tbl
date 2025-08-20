@@ -16,6 +16,7 @@
         <field name="CommonHotbarColumns" type="IntegerTableFieldDefinition" value="9" />
         <field name="ClassHotbarColumns" type="IntegerTableFieldDefinition" value="5" />
         <field name="ItemsHotbarColumns" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heecd5e29ge18fge5ddg4b3dg99b83bad1f8d" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -27,6 +28,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7b8911d2g0c45g287dg8be6g9ca65d27ed12" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="h142e836bga87dgd7a8g2198gf70c5d767757" version="1" />
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="84573fbf-3e46-4fef-867f-e919720888bf" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h53275543ge59fg314ag3749g836bc02798bf" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,6 +40,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5f8a860fga106ge0d3g0263gc3f0176d9f5a" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="he6d929c6g16f6g3125gc655g3e202c421035" version="1" />
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="bdac4520-864f-458e-8a05-b107a283497e" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8b91ce0g5dcdge5fdg90fbg45e2e7e31323" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -49,6 +52,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5766791g9677gc8b5g6cd5g79e84aaaa48d" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="hab2bf3c5g5b7eg8d9dg0037g312b14c38a51" version="1" />
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="da53b052-39b5-46d1-a70e-702dafbc54bc" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87d16bfdgc5c4g935bg4a49g41992a971a34" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -60,6 +64,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2058f69g7c75gcddfg12c8g8c895bddf7e7" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="hae4bf0dfgb65dgd083g903agc8bc5dfe08f6" version="1" />
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="a94958de-9a51-4946-9e13-44cd4dc58a1d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75e06855g4f3cg9e33ga360g4f749d5212d6" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -81,7 +86,8 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Wit" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8313c119gc0d4g40a8g9b35g14e16e3779cb" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="hd639b370ged4egf79fgccbeg073cd7bb6c85" version="1" />
-        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="79b2f557-1c0b-46e2-8832-279fa2f0639d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heefbf8a6g42a3ge2f5gfe95g7e636e461b45" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -92,7 +98,8 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="DebugSwashbuckler" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbffcff22g9264g2f3ag45d8gcc4c44466259" version="1" />
         <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="h662a23f8ge28agd1bag6d8bg42cabf05493f" version="1" />
-        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="79b2f557-1c0b-46e2-8832-279fa2f0639d" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68cc17c1g45e1g1f17g59bfg4d1d5bd43f7b" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

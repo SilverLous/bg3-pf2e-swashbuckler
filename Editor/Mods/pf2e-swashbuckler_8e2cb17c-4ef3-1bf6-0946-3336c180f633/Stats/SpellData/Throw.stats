@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c75b1787-58d1-4696-8d05-4acbda82eda1">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca76146f-c8d7-4e17-936d-dca456753428" />
+        <field name="Name" type="NameTableFieldDefinition" value="LeadingDance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ef91ef9-9677-4ebb-b31f-b2683712c10d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,Panache,100,-1);" />
+        <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Performance,context.Target.GetPassiveSkill(Skill.Perception));" />
+        <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not DistanceToTargetGreaterThan(3);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haffbc2d0ge977g206dg3fd9g0efeb72f80ef" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcac01f03gbe45g84e1gec92ge177534c52b7" version="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="ItemUse" enumeration_type_name="CursorMode" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self();" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreBlindness;IgnoreAoO;RangeIgnoreSourceBounds;IsMelee;CombatLogSetSingleLineRoll;IgnoreSilence;AbortOnSecondarySpellRollFail;AbortOnSpellRollFail" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

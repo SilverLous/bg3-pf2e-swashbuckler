@@ -7,7 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EvenTheOdds" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="87c0b5f9-8dc4-45fd-a036-63bf1ed5d13d" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Panache,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Panache,100,10);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heee0b91ag17d7gb3e8ga224g63649814e4f9" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0;" />
@@ -22,10 +22,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4ee8b3a0-9728-41b0-a97b-90d4d4b7f5d6" />
         <field name="Name" type="NameTableFieldDefinition" value="DastardlyDash" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e05f2648-1942-43d3-92a6-a5ce06a326d9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIDE,100,1);ApplyStatus(SELF,DastardlyDashEffect,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0725aa6agfacag8ab4gcdb7g3e49905eb487" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4adf10dg2e64g4176g74f0g4f286a04e195" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIDE,100,1);ApplyStatus(SELF,DastardlyDashEffect,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -36,6 +37,17 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RAISE_SHIELD,100,20);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b307b77g26edg0f8fg6ff4g84bc5786ee6c" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="IsOffHandSlotEmpty() or HasShieldEquipped()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fd8974a-d2ae-41f5-8751-8e5f98d115a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ee8b3a0-9728-41b0-a97b-90d4d4b7f5d6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STRIDE,100,1);ApplyStatus(SELF,MobileFinisherEffect,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38891e2ag938fg099cgc4d9g7ccf1d31f8ee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a3b53ffga601g7177g7355gb4aaef78bf39" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source);" />
       </fields>
     </stat_object>
   </stat_objects>

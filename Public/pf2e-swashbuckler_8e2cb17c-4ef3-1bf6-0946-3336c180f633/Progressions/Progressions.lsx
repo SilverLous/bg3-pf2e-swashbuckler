@@ -10,6 +10,7 @@
                     <attribute id="Name" type="LSString" value="Swashbuckler"/>
                     <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro;Expl_BD"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);"/>
                     <attribute id="TableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
                     <attribute id="UUID" type="guid" value="a6812af9-cdf1-47f4-8bdd-2ba663fc4866"/>
                     <children>
@@ -180,6 +181,7 @@
                     <attribute id="UUID" type="guid" value="3cce02d0-8de6-4f89-9f39-c16a46fe7e7f"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Braggert"/>
                     <attribute id="PassivesAdded" type="LSString" value="TerrifiedRetreat"/>
@@ -189,27 +191,22 @@
                     <attribute id="UUID" type="guid" value="27e85a2f-2a9a-46a5-8b7f-5753aa5434b3"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Swashbuckler"/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);"/>
-                    <attribute id="TableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
-                    <attribute id="UUID" type="guid" value="ef83dad9-6cac-4ed1-acea-2d320a8ce4e8"/>
-                </node>
-                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Acrobatics)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="DebugSwashbuckler"/>
-                    <attribute id="PassivesAdded" type="LSString" value="FeatPrerequisites;Level12Feats;CatUsedToDisappointment;MobileFinisher;Level10Feats;BucklerDance;DazzlingDisplay;DerringDo;TargetingFinisher;Level8Feats;BleedingFinisher;DualFinisher;StunningFinisher;Level6Feats;AttackOfOpportunity;CombinationFinisher;Level4Feats;DastadrlyDash;EvenTheOdds;ImpalingFinisher;LeadingDance;Level2Feats;AfterYou;CharmedLife;EnjoyTheShow;RetreatingFinisher;EvenTheOdds;UnbalancingFinisher;Level1Feats;FlashyDodge;GoadingFeint;ElegantBuckler;DisarmingFlair;YoureNext;OneForAll"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Level12Feats;CatUsedToDisappointment;MobileFinisher;Level10Feats;BucklerDance;DazzlingDisplay;DerringDo;ReflexiveRiposte;StumblingFinisher;Level8Feats;BleedingFinisher;DualFinisher;StunningFinisher;Level6Feats;AgileManeuvers;CombinationFinisher;Level4Feats;DastadrlyDash;EvenTheOdds;GuardiansDeflection;ImpalingFinisher;LeadingDance;Level2Feats;AfterYou;CharmedLife;EnjoyTheShow;RetreatingFinisher;UnbalancingFinisher;Level1Feats;BonMot;DisarmingFlair;ElegantBuckler;FlashyDodge;GoadingFeint;OneForAll;OppertuneRiposte;Passive_Braggart;Passive_Fencer;Passive_Gymnast;StylishCombatant;Passive_BattleDancer;Passive_Wit"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2"/>
                     <attribute id="UUID" type="guid" value="4c37fc83-1479-40a5-a6f5-9164d23259bf"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Persuasion)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Wit"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Passive_Wit;BonMot"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive_Wit;BonMot;
+"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="79b2f557-1c0b-46e2-8832-279fa2f0639d"/>
                     <attribute id="UUID" type="guid" value="80c367e5-74dc-4c18-88a9-e85eb59e8bba"/>
