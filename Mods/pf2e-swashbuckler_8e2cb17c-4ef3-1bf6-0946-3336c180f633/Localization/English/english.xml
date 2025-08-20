@@ -14,7 +14,7 @@
   <content contentuid="h11aee383gc7cdgf813ga50dg2e221b824f60" version="2">Confident Finisher</content>
   <content contentuid="h784f5957gaa65g9598ge941gce7b318e2b13" version="2">Confident Finisher</content>
   <content contentuid="ha464d8d5g00e4g08e2g7821gd70133496857" version="1">Hier könnte ihre Werbung stehen!</content>
-  <content contentuid="h67458ce4g4beag2418g65dbgdb32be874c97" version="2">1 Action &lt;br&gt; You make an incredibly graceful attack, piercing your foe’s defenses. Make a Strike with the following failure effect. Failure You deal half your precise strike damage to the target. This damage type is that of the weapon or unarmed attack you used for the Strike.&lt;/br&gt;</content>
+  <content contentuid="h67458ce4g4beag2418g65dbgdb32be874c97" version="3">1 Action &lt;br&gt; You make an incredibly graceful attack, piercing your foes defenses. Make a Strike with the following failure effect. Failure You deal half your precise strike damage to the target. This damage type is that of the weapon or unarmed attack you used for the Strike.&lt;/br&gt;</content>
   <content contentuid="he562db62gc186g19c8g9b3agc7adfe91c74a" version="1">Vicious Swing, but better</content>
   <content contentuid="h07072a15ge59egf06cg5a52g005da3387bf0" version="1">Bon Mot</content>
   <content contentuid="hb8f69043g3ad8g2d46g50c7g377d9bd66866" version="1">Enjoy The Show</content>
@@ -84,4 +84,19 @@
   <content contentuid="h6cc46d2bgf8a5gce0dg999bg1f597e25656c" version="1">Dastartdly Dash</content>
   <content contentuid="h5b307b77g26edg0f8fg6ff4g84bc5786ee6c" version="1">Buckler Dance</content>
   <content contentuid="h12223ee2g5e1fg3291g851dgc5f9ac213af3" version="1">Get Used To Dissapointment</content>
+  <content contentuid="h8e8b5216g83eeg23b0g3ab2g49b3a590b389" version="2">Dazzling Display</content>
+  <content contentuid="hb67987f1g23dbg1cc1gfcbcg813a131ffebe" version="1">Unbalancing Finisher</content>
+  <content contentuid="h03c77763gc152gdc21g4b57ge829f010fe05" version="1">Dastardly Dash</content>
+  <content contentuid="hb3c8d623gd1bdgd3c6g3a76g45e0e911d186" version="1">Stumbling Finisher</content>
+  <content contentuid="h448a3457g47a5g0424g8f45g3677f0798f04" version="1">Targeting Finisher</content>
+  <content contentuid="h3250bc64gfbecg51a4g9c58gf12f185b55eb" version="1">Mobile Finisher</content>
+  <content contentuid="hd62c89a3g0689g5cdegaef5g94e2bbc892a4" version="1">Stunning Finisher</content>
+  <content contentuid="h74f1071fg3803g16f6g307cgf3132f5d7b50" version="1">Finishers</content>
+  <content contentuid="hbc5bf077g9f65g3626g2409gadfea8ec3b29" version="1">Retreating Finisher</content>
+  <content contentuid="hb9e64b69gc4abg09dag5048g7be92f577776" version="1">Enjoying The Show</content>
+  <content contentuid="h2a012c52gf4edg7e69ga35cg7b81caa3e4b3" version="1">Kip Up</content>
+  <content contentuid="h8313c119gc0d4g40a8g9b35g14e16e3779cb" version="1">Wit</content>
+  <content contentuid="hd639b370ged4egf79fgccbeg073cd7bb6c85" version="1">Wit</content>
+  <content contentuid="hbffcff22g9264g2f3ag45d8gcc4c44466259" version="1">Debug Swashbuckler</content>
+  <content contentuid="h662a23f8ge28agd1bag6d8bg42cabf05493f" version="1">DebugSwashbuckler</content>
 </contentList>

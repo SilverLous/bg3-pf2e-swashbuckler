@@ -6,13 +6,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="Name" type="NameTableFieldDefinition" value="BasicFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f124fec-1605-4952-a13f-f61f92cb53f8" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6+max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and CanPrecisionDamage();" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+2d6, MainMeleeWeaponDamageType)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,Panache);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,Panache);ApplyStatus(SELF,EffectFinisherUsed);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_FinisherContainer" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -20,10 +21,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="34202027-9d6d-4d03-9d4e-74b265321ccb" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfidentFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PreciseFinisher)):DealDamage((1d6));IF(not HasPassive('PreciseFinisher)):DealDamage((1d6)/2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PreciseFinisher')):DealDamage(( LevelMapValue(PreciseStrike)));IF(not HasPassive('PreciseFinisher')):DealDamage(( LevelMapValue(PreciseStrike))/2);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784f5957gaa65g9598ge941gce7b318e2b13" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67458ce4g4beag2418g65dbgdb32be874c97" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67458ce4g4beag2418g65dbgdb32be874c97" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+2d6, MainMeleeWeaponDamageType)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RecklessAttack" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RecklessAttack" />
@@ -34,17 +35,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="25d94e12-557b-4d82-bc86-89b8f518a653" />
-        <field name="Name" type="NameTableFieldDefinition" value="BonMot" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07072a15ge59egf06cg5a52g005da3387bf0" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d67aa0e9-34fb-4bc3-82aa-05ca988003c1" />
         <field name="Name" type="NameTableFieldDefinition" value="EnjoyTheShow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce5fced2-1ec0-4080-a317-dd9b7da36d90" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8f69043g3ad8g2d46g50c7g377d9bd66866" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -61,6 +56,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DazzlingDisplay" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="99" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e8b5216g83eeg23b0g3ab2g49b3a590b389" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -101,6 +97,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RetreatingFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DISENGAGE_USESTEP,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbc5bf077g9f65g3626g2409gadfea8ec3b29" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -109,6 +106,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnbalancingFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6+max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(OFFBALANCE,100,2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb67987f1g23dbg1cc1gfcbcg813a131ffebe" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -120,6 +118,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(Self;DastardlyDashEffect);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;AddFallDamageOnLand;IsHarmful;CombatLogSetSingleLineRoll;IsAttack;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h03c77763gc152gdc21g4b57ge829f010fe05" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -128,6 +127,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="StumblingFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6+max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);Force(ShoveDistance,OriginToEntity,Aggressive);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3c8d623gd1bdgd3c6g3a76g45e0e911d186" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -135,6 +135,38 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5b4a1b20-eb19-49a8-b941-4de149873b75" />
         <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h448a3457g47a5g0424g8f45g3677f0798f04" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab307143-aa42-4a50-b223-774f39e94b5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3250bc64gfbecg51a4g9c58gf12f185b55eb" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7fef7be-6bc2-47ca-b54b-0ebc9a88e242" />
+        <field name="Name" type="NameTableFieldDefinition" value="StrunningFinisher" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd62c89a3g0689g5cdegaef5g94e2bbc892a4" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44b09ab7-8b70-4e06-a92b-66abe5b521e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FinisherContainer" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="ConfidentFinisher;ImpalingFinisher;BleedingFinisher;StumblingFinisher;UnbalancingFinisher;TargetingFinisher;MobileFinisher;RetreatingFinisher;StunningFinisher;" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74f1071fg3803g16f6g307cgf3132f5d7b50" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="c25d80c5-aaf3-4aba-bc1f-bb1c8534725e,,;45bcbbd4-f9ca-4b19-88c2-822c5e2b0d8b,,;466e7470-712f-4a67-8ef1-5908a20b0449,,;c1713221-163b-4bae-95de-e6681d665c76,,;dc83b386-41f5-43df-9649-788107052830,,;b63dee1e-08e1-4f7a-88ee-1e6baa38e0dd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -58,6 +58,22 @@
                     <attribute id="ShortName" type="TranslatedString" handle="h243c680bg63afg66f2g4536g76ddbe29c313" version="1"/>
                     <attribute id="UUID" type="guid" value="80e5082c-949d-4485-8540-03f424910ea1"/>
                 </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8313c119gc0d4g40a8g9b35g14e16e3779cb" version="1"/>
+                    <attribute id="Name" type="FixedString" value="Wit"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="hd639b370ged4egf79fgccbeg073cd7bb6c85" version="1"/>
+                    <attribute id="UUID" type="guid" value="efc337a7-fc5c-449a-b44f-0325cca9829f"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hbffcff22g9264g2f3ag45d8gcc4c44466259" version="1"/>
+                    <attribute id="Name" type="FixedString" value="DebugSwashbuckler"/>
+                    <attribute id="ParentGuid" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="79b2f557-1c0b-46e2-8832-279fa2f0639d"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h662a23f8ge28agd1bag6d8bg42cabf05493f" version="1"/>
+                    <attribute id="UUID" type="guid" value="b8b4b113-8649-49d7-a4d3-4310522f19de"/>
+                </node>
             </children>
         </node>
     </region>

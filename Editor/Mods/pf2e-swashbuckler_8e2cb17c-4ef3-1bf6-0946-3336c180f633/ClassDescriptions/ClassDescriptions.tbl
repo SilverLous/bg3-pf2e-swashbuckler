@@ -73,5 +73,27 @@
         <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="5797a2dd-3106-41fb-8b22-1e704a3aa587" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="efc337a7-fc5c-449a-b44f-0325cca9829f" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Wit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8313c119gc0d4g40a8g9b35g14e16e3779cb" version="1" />
+        <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="hd639b370ged4egf79fgccbeg073cd7bb6c85" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b8b4b113-8649-49d7-a4d3-4310522f19de" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="DebugSwashbuckler" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbffcff22g9264g2f3ag45d8gcc4c44466259" version="1" />
+        <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="h662a23f8ge28agd1bag6d8bg42cabf05493f" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="79b2f557-1c0b-46e2-8832-279fa2f0639d" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

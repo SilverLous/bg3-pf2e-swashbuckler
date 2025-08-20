@@ -46,5 +46,42 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DastardlyDash);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13f6ea9a-63d8-4741-baa9-98fe87fb778b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnjoyTheShowEffect" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b687beba-3017-421d-99e7-e90ea4ec9edb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb9e64b69gc4abg09dag5048g7be92f577776" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_PEN_1ATTACK);" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty1Attack,100,2)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty1Attack,100,2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b64e8e8c-9dc6-4822-9195-14313efe9a5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="EnjoyTheShowEffectCrit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="13f6ea9a-63d8-4741-baa9-98fe87fb778b" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_PEN_2ATTACK);" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty2Attack,100,2)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty2Attack,100,2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb78071a-6f99-4bb4-a039-ba5f057ac4eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="TerrifiedRetreatPush" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4bcb1bf1-6c90-466b-b2bc-eb080f2c7225" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SLEEPING);Force(18);RemoveStatus(SG_Sleeping);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5834b817-af1a-46d0-9ab3-50cfb5d37f5b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EffectFinisherUsed" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-99);Skill(Athletics,-99);" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

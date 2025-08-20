@@ -6,7 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfidentFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11aee383gc7cdgf813ga50dg2e221b824f60" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConfidentFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FinisherContainer,AddChildren);UnlockSpell(Target_ConfidentFinisher);" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha464d8d5g00e4g08e2g7821gd70133496857" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
@@ -100,6 +100,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a069befe-526d-4642-87e9-f42245b45946" />
         <field name="Name" type="NameTableFieldDefinition" value="StunningFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9bb19edcg5605g9940g4de7g9087aa0c1630" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StumblingFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -130,6 +131,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e575a2e2-d7bf-4a21-abb6-52c4068849bc" />
         <field name="Name" type="NameTableFieldDefinition" value="ReflexiveRiposte" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h684dbff9gdecagc762gc210g1240053128b7" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ReflexiveRiposte);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -137,6 +139,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8efa12ed-358b-4e5e-a58c-5e74735fa3f1" />
         <field name="Name" type="NameTableFieldDefinition" value="StumblingFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf33f5755gbbdbgbc8cg8684ga7cd43684b37" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StumblingFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -144,6 +147,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6f1a0ebf-e1bf-4fe8-a028-896bbf034095" />
         <field name="Name" type="NameTableFieldDefinition" value="TargetingFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a8657d6g2a92g8169gf858gf180ef99a101" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TargetingFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -159,6 +163,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c662445e-595b-49c4-9303-e9321b530b40" />
         <field name="Name" type="NameTableFieldDefinition" value="MobileFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h337f41dfg2b8agc38fg3b78g60406f603dc1" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MobileFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -194,9 +199,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="35510af1-67da-4965-8940-38df59f745c5" />
         <field name="Name" type="NameTableFieldDefinition" value="VivaciousSpeed" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c16efa0g12b0gb3acg874egc12b10528462" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,0.75,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 0.75 ,0);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Level" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('Panache');" />
       </fields>
     </stat_object>
@@ -369,6 +374,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b36548e4-a9fa-4894-bb0b-55e22bd86a5c" />
         <field name="Name" type="NameTableFieldDefinition" value="GuardiansDeflection" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34c0ecd9g5be3g382eg5dc9gea864ca42d3b" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_GuardiansDeflection);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -378,6 +384,93 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="35f1944d-03aa-447d-986b-7ea15736b827" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f0529b9gacb1g889bgc922g474179a3374e" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Grapple') or SpellId('Target_Trip') or SpellId('Target_Disarm') or SpellId('Target_Shove');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e229f5b-6e40-4315-b7db-834f6a77666c" />
+        <field name="Name" type="NameTableFieldDefinition" value="OppertuneRiposte" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_OpportuneRiposte);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55e28de3-bee9-48dc-9bb9-c1f59679c66d" />
+        <field name="Name" type="NameTableFieldDefinition" value="KipUp" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eb354e5b-a6cb-4f67-b584-121b5cd946a0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a012c52gf4edg7e69ga35cg7b81caa3e4b3" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Prone);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cfedb53-4ee9-4e4e-9058-923af31447d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="TerrifiedRetreat" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TerrifiedRetreat);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bdeaa3ea-81a3-4886-90c4-233ea5be6823" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Braggart" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics); RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Intimidation);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Demoralize');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(Panache,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d6f39f5-d200-4440-b66a-73896c323a5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Fencer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics);RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Deception);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Feint');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(Panache,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="05e53ca3-911e-499b-91e7-0238c332ab38" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Gymnast" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics);RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Athletics);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Grapple') or SpellId('Target_Trip') or SpellId('Target_Disarm') or SpellId('Target_Shove');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(Panache,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="StylishCombatant" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="Combat(context.Source) or CharacterLevelGreaterThan(10);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f8ef53a-8770-42a4-8acc-e2a21f97d556" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_BattleDancer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics);RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Performance);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa1b2f6c-17c7-484d-aa2c-c9d2acb5c5dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Passive_Wit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd09c0d8-d585-4506-939a-2352fba889ab" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Acrobatics);RollBonus(SkillCheck,LevelMapValue(StylishCombatVL),Persuasion);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c496ec86-39ef-4e7b-a234-7b4e714baa06" />
+        <field name="Name" type="NameTableFieldDefinition" value="Expl_BD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_BattledanceAway);" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -78,5 +78,28 @@
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,FreeDemoralizeStatus,100,2);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ff547ed-7ec1-42ca-ae47-4cc8de29f3c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TerrifiedRetreat" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Source,context.Observer) and SpellId('Target_Demoralize') and IsCritical() and not TARGET:CharacterLevelGreaterThan(OBSERVER_OBSERVER.CharacterLevel);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(TerrifiedRetreatPush,100,1);ApplyStatus(STUNNED,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="17093abc-b5db-4a4c-879c-ac804734c443" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BattledanceAway" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('EffectFinisherUsed',context.Source);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0;" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
