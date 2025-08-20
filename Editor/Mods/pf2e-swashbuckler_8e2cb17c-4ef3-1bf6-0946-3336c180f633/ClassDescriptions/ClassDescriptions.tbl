@@ -17,6 +17,7 @@
         <field name="ClassHotbarColumns" type="IntegerTableFieldDefinition" value="5" />
         <field name="ItemsHotbarColumns" type="IntegerTableFieldDefinition" value="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heecd5e29ge18fge5ddg4b3dg99b83bad1f8d" version="1" />
+        <field name="ClassEquipment" type="FixedStringTableFieldDefinition" value="EQP_CC_Rogue" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

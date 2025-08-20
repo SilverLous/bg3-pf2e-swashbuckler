@@ -1,0 +1,5 @@
+new equipment "SwashbucklerStart"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "WPN_Rapier"
+
