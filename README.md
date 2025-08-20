@@ -23,8 +23,8 @@
 |       4 | Dastardly Dash               | ✅      |
 |       4 | Devrin's Dazzling Diversion  | ❌      |
 |       4 | Even the Odds                | ✅      |
-|       4 | Flamboyant Athlete           | ✅      |
-|       4 | Guardian's Deflection        | ❌      |
+|       4 | Flamboyant Athlete           | ❎      |
+|       4 | Guardian's Deflection        | ✅      |
 |       4 | Impaling Finisher            | ✅      |
 |       4 | Leading Dance                | ✅      |
 |       4 | Masquerade of Seasons Stance | ❌      |
