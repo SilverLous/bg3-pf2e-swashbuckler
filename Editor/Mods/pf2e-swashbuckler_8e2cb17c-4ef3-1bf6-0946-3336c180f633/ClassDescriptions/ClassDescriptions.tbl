@@ -18,6 +18,7 @@
         <field name="ItemsHotbarColumns" type="IntegerTableFieldDefinition" value="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heecd5e29ge18fge5ddg4b3dg99b83bad1f8d" version="1" />
         <field name="ClassEquipment" type="FixedStringTableFieldDefinition" value="EQP_CC_Rogue" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="d93434bd-6b71-4789-b128-ee24156057cc;f8a0608b-666c-4be6-a49c-03b369c10bd2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

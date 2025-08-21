@@ -95,5 +95,14 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f4f931dgc139gc7d7g0d27gea656a2422f9" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02165917-1abb-4cde-bbf9-cf63fab5f1e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ImpossibleRiposte" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f02e834c-b42e-4e8a-84de-7a60bf5cd8b1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe99233dg06d8g093bgd046g3e05a1a42e52" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and not IsMeleeAttack() and IsMiss() and IsCriticalMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="400"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h50186357gcd0ege9d1g89ccga621e77de53a" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7a2b238cga613g54d2g4d54g75df4238001e" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="SwashiCapstones"/>
+                    <attribute id="UUID" type="guid" value="e73a6b1d-645a-4494-bfd7-c38de8fff72e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

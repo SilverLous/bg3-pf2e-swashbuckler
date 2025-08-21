@@ -19,6 +19,14 @@
                     <attribute id="ProgressionTableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
                     <attribute id="ShortName" type="TranslatedString" handle="he605654cgabcdgca31g99d2g9b1805dcf7f3" version="1"/>
                     <attribute id="UUID" type="guid" value="4699ee43-29b1-4e4a-8b21-c44801d7ed12"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="d93434bd-6b71-4789-b128-ee24156057cc"/>
+                        </node>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="f8a0608b-666c-4be6-a49c-03b369c10bd2"/>
+                        </node>
+                    </children>
                 </node>
                 <node id="ClassDescription">
                     <attribute id="Description" type="TranslatedString" handle="h53275543ge59fg314ag3749g836bc02798bf" version="1"/>

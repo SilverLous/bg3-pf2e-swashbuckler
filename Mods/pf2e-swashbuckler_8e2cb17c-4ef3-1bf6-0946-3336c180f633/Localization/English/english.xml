@@ -13,7 +13,7 @@
   <content contentuid="h3130307fg75d6g84d6g72bag79f28c0eb1ec" version="1">Basic Finisher</content>
   <content contentuid="h11aee383gc7cdgf813ga50dg2e221b824f60" version="2">Confident Finisher</content>
   <content contentuid="h784f5957gaa65g9598ge941gce7b318e2b13" version="2">Confident Finisher</content>
-  <content contentuid="ha464d8d5g00e4g08e2g7821gd70133496857" version="2">You gain an elegant finishing attack you can make when you have panache. You gain the Confident Finisher action. </content>
+  <content contentuid="ha464d8d5g00e4g08e2g7821gd70133496857" version="3">You gain an elegant finishing attack you can make when you have panache. You gain the Confident Finisher action.</content>
   <content contentuid="h67458ce4g4beag2418g65dbgdb32be874c97" version="4">1 Action You make an incredibly graceful attack, piercing your foes defenses. Make a Strike with the following failure effect. Failure You deal half your precise strike damage to the target. This damage type is that of the weapon or unarmed attack you used for the Strike.</content>
   <content contentuid="he562db62gc186g19c8g9b3agc7adfe91c74a" version="1">Vicious Swing, but better</content>
   <content contentuid="h07072a15ge59egf06cg5a52g005da3387bf0" version="1">Bon Mot</content>
@@ -124,7 +124,7 @@
   <content contentuid="hd8412a1ag5022g465ag2cefgee486a35ca9b" version="1">With precisely the right words of encouragement, you bolster an ally's efforts. Designate an ally within 30 feet; this action counts as sufficient preparation to Aid that ally. When you use the Aid reaction to help that ally, you can roll Diplomacy in place of the usual check and the action gains the bravado trait.</content>
   <content contentuid="he52f0c1dga2f4gf0b7gb7cfg33173fd524b2" version="1">When danger calls, you have a strange knack for coming out on top. You gain a +2 circumstance bonus to the triggering save. If you succeed on the triggering saving throw, you gain panache until the end of your next turn.</content>
   <content contentuid="h42cd35ffgd771g3becgfbb4gdf23a754b2b9" version="1">You use your weapon to deflect the attack against your ally, granting a +2 circumstance bonus to their AC against the triggering attack. This turns the triggering critical hit into a hit, or the triggering hit into a miss. You gain panache until the end of your next turn.</content>
-  <content contentuid="h70d33ce2g3a1agd8c8g1792g072256d1111e" version="1">You stand up. This movement doesn’t trigger reactions. </content>
+  <content contentuid="h70d33ce2g3a1agd8c8g1792g072256d1111e" version="2">You are immune to the prone condition.</content>
   <content contentuid="h1ab8fff5gd98cgb5d6g7274ge463868408fc" version="1">When you critically succeed at the Demoralize action, if the target's level is lower than yours, the target is fleeing for 1 round.</content>
   <content contentuid="h6bd058e3g8da1g5f39g3817gfd2b9910db5e" version="1">Terrified Retreat</content>
   <content contentuid="h37b371c9gf9bbg9a26gad3bg2a50b9255ba9" version="1">When you critically succeed at the Demoralize action, if the target's level is lower than yours, the target is fleeing for 1 round.</content>
@@ -183,4 +183,24 @@
   <content contentuid="ha0ab1560ga29bgbc6bg5559g4e0eae78f305" version="1">Reflexive Riposte</content>
   <content contentuid="h2f4f931dgc139gc7d7g0d27gea656a2422f9" version="1">Terrified Retreat</content>
   <content contentuid="h9ff5a3f2g77cdgb001ga3dfga4048ff2584c" version="1">Precise Strike</content>
+  <content contentuid="h60055003g0849gfcccg802eg002ecbef5b14" version="1">Precise Strike</content>
+  <content contentuid="h2eaf3084g7dbbg5a57gaeeage13af7c7f1d0" version="1">You gain 2 cantrips, 2 trained skills and are allowed to take Versatile Performance as a Level 4 feat.</content>
+  <content contentuid="h34aed3cag2aa5gf090ge0eegfd0deab7ea50" version="1">You got background music</content>
+  <content contentuid="h7fff0bc5gfc5agefceg1abeg1d0c1bcf95a0" version="1">You're surrounded by orchestral music that shifts and changes to match your behavior. This music provides a +1 status bonus to Performance checks.This music moves with you and has a maximum volume equal to four humans shouting. You take a –4 penalty to Stealth checks while the music is playing. You can't control the exact music this spell creates. The music doesn't create intelligible words or singing. You can Dismiss this spell.</content>
+  <content contentuid="h9f77b393gb953gb511g6980g7389b3132a9a" version="1">Musical Accompaniment</content>
+  <content contentuid="h673699d2g539fgc9dbgf4d5ge566071fb533" version="1">You're surrounded by orchestral music that shifts and changes to match your behavior. This music provides a +1 status bonus to Performance checks. This music moves with you and has a maximum volume equal to four humans shouting. You take a –4 penalty to Stealth checks while the music is playing. You can't control the exact music this spell creates. The music doesn't create intelligible words or singing. You can Dismiss this spell.</content>
+  <content contentuid="h30728b4fgb4d6g7336g0221gc25aca423594" version="1">You focus your panache into an impeccable assault. Make a Strike, rolling the attack roll twice and using the better result.</content>
+  <content contentuid="h55d2cfa2g98a0gaa10g297dgd8e82898a000" version="1">Scare to Death</content>
+  <content contentuid="h35066661g5e5dgeb77g10b7gf6800e5f9761" version="1">You shout at someone so terrifingly, that they might die. You make a finisher against a target that is currently immune to demoralize at your demoralize range. This uses your attack modifier to hit.</content>
+  <content contentuid="h196e6e3cg052eg8b4dg41a3g4121546bb0a5" version="1">Perfect Finisher</content>
+  <content contentuid="hafa1e989gfdc9g27a5g88f3gb4fa0796cb6a" version="1">You focus your panache into an impeccable assault. Make a Strike, rolling the attack roll twice and using the better result.</content>
+  <content contentuid="hfe99233dg06d8g093bgd046g3e05a1a42e52" version="1">Impossible Riposte</content>
+  <content contentuid="hb6aea625ge2afg3996g0fa1g479008b3b257" version="2">Nope</content>
+  <content contentuid="h166b4e21gfed7gcb4bg29b4gf25df23eaee7" version="2">I do not want any!</content>
+  <content contentuid="hdaff3aedg6134gf0b0g7458g451c8935c46e" version="1">Scare To Death</content>
+  <content contentuid="h7a2b238cga613g54d2g4d54g75df4238001e" version="1">Swashbuckler Capstone</content>
+  <content contentuid="h50186357gcd0ege9d1g89ccga621e77de53a" version="1">I felt that the Swashbuckler needed some love here. You do not need to take one if you disagree.</content>
+  <content contentuid="h80a5616fg2df3g8efbg60afgf4823862aab9" version="1">You shout at someone so terrifingly, that they might die. You make a finisher against a target that is currently immune to demoralize at your demoralize range. This uses your attack modifier to hit.</content>
+  <content contentuid="hd3c4496dga73fgf8dbgb943g4df7d527a733" version="1">Impossible Riposte</content>
+  <content contentuid="hacc54727g8c62g3d13g195ag9601b7774a8b" version="1">Your ripostes can deflect attacks back at their source. You can use Opportune Riposte with a trigger of “A foe outside of your reach critically fails an attack roll against you” in addition to its usual trigger. When you use Opportune Riposte with this new trigger against a ranged attack, your Strike deflects some of the triggering effect back toward its source. Compare the result of your attack roll to the AC of the triggering foe. On a hit, you deal the normal amount of damage for your Strike.</content>
 </contentList>

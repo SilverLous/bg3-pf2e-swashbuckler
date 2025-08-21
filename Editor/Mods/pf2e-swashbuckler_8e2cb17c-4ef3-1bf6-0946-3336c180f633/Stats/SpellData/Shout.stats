@@ -50,5 +50,19 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6725bc3-c71d-477b-b103-93cbe00ea2fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="MusicalAcc" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78fba8de-9476-4285-a6b4-418e2ec8d3f4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(MusicalEffect,100,-1);" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9f77b393gb953gb511g6980g7389b3132a9a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h673699d2g539fgc9dbgf4d5ge566071fb533" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsSpell;IgnoreAoO" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

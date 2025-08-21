@@ -9,8 +9,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro;PreciseStrikeDamage;" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="55aa3808-f6ec-424e-8602-7f6a274fb0b7;4ae96f83-9ef6-4459-a9c3-cf13c0fbb6e0;9b4404fd-870e-4850-b714-82c905707d35;b5028eb3-acc7-4250-b5e1-1c001d4734df;efc337a7-fc5c-449a-b44f-0325cca9829f;b8b4b113-8649-49d7-a4d3-4310522f19de" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);" />
       </fields>
@@ -83,7 +83,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FortitudeExpert;VivaciousSpeed;VivaciousSpeed_Panache;OpportuneRiposte" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FortitudeExpert;VivaciousSpeed;OpportuneRiposte" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)" />
       </fields>
@@ -133,9 +133,9 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="VivaciousSpeed_7;VivaciousSpeed_7_Panache;ReflexMaster;Evasion;WeaponSpecializationExpert;KipUp" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ReflexMaster;Evasion;WeaponSpecializationExpert;KipUp" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
-        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="VivaciousSpeed;VivaciousSpeed_Panache;ReflexExpert" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="ReflexExpert" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,2,SkillIncrease);" />
       </fields>
     </stat_object>
@@ -184,9 +184,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="VivaciousSpeed_11;VivaciousSpeed_11_Panache" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
-        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="VivaciousSpeed_7;VivaciousSpeed_7_Panache" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(032992cd-968a-47bd-a7b2-75935aaa92e6,1,SkillIncrease);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat)" />
       </fields>
     </stat_object>
@@ -199,7 +197,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(16d1838d-1fb0-4a40-8201-a92ef5321143,1,ClassFeat)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(16d1838d-1fb0-4a40-8201-a92ef5321143,1,ClassFeat);SelectPassives(93d98709-817a-40f8-b54f-1ebf3aca3dae,1,SwashCapstones)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -223,7 +221,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="ebc5fc74-ebeb-45b1-884e-0e270c7b57e2" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Level12Feats;CatUsedToDisappointment;MobileFinisher;Level10Feats;BucklerDance;DazzlingDisplay;DerringDo;ReflexiveRiposte;StumblingFinisher;Level8Feats;BleedingFinisher;DualFinisher;StunningFinisher;Level6Feats;AgileManeuvers;CombinationFinisher;Level4Feats;DastadrlyDash;EvenTheOdds;GuardiansDeflection;ImpalingFinisher;LeadingDance;Level2Feats;AfterYou;CharmedLife;EnjoyTheShow;RetreatingFinisher;UnbalancingFinisher;Level1Feats;BonMot;DisarmingFlair;ElegantBuckler;FlashyDodge;GoadingFeint;OneForAll;OppertuneRiposte;Passive_Braggart;Passive_Fencer;Passive_Gymnast;StylishCombatant;Passive_BattleDancer;Passive_Wit" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeatPrerequisites;Level12Feats;CatUsedToDisappointment;MobileFinisher;Level10Feats;BucklerDance;DerringDo;ReflexiveRiposte;StumblingFinisher;Level8Feats;BleedingFinisher;DualFinisher;StunningFinisher;Level6Feats;AgileManeuvers;CombinationFinisher;PreciseFinisher;Level4Feats;DastadrlyDash;EvenTheOdds;GuardiansDeflection;ImpalingFinisher;LeadingDance;VersPerf;Level2Feats;AfterYou;BardDed;CharmedLife;EnjoyTheShow;RetreatingFinisher;UnbalancingFinisher;Level1Feats;BonMot;DisarmingFlair;ElegantBuckler;FlashyDodge;GoadingFeint;OneForAll;ScareToDeath;ImpossibleRiposte;PerfectFinisher" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Acrobatics)" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="False" />
       </fields>

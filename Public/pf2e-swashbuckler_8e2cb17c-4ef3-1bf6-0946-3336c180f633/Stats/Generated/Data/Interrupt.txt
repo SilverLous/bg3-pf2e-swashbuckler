@@ -68,3 +68,9 @@ data "Properties" "ApplyStatus(TerrifiedRetreatPush,100,1);ApplyStatus(STUNNED,1
 data "Cost" "ReactionActionPoint:0;"
 data "InterruptDefaultValue" "Enabled"
 
+new entry "Interrupt_ImpossibleRiposte"
+type "InterruptData"
+using "Interrupt_OpportuneRiposte"
+data "DisplayName" "hfe99233dg06d8g093bgd046g3e05a1a42e52;1"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and not IsMeleeAttack() and IsMiss() and IsCriticalMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();"
+
