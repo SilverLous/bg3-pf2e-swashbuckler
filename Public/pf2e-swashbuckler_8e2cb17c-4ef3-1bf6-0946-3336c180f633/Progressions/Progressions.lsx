@@ -8,9 +8,9 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Swashbuckler"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro;Expl_BD"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);"/>
                     <attribute id="TableUUID" type="guid" value="5797a2dd-3106-41fb-8b22-1e704a3aa587"/>
                     <attribute id="UUID" type="guid" value="a6812af9-cdf1-47f4-8bdd-2ba663fc4866"/>
                     <children>

@@ -9,10 +9,10 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Swashbuckler" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro;Expl_BD" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;ReflexExpert;PerceptionIncrease;UnarmedABP;FeatPrerequisites;AnchorPosition;ConfidentFinisher;QuickJumpAcro" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Acrobatics);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="55aa3808-f6ec-424e-8602-7f6a274fb0b7;4ae96f83-9ef6-4459-a9c3-cf13c0fbb6e0;9b4404fd-870e-4850-b714-82c905707d35;b5028eb3-acc7-4250-b5e1-1c001d4734df;efc337a7-fc5c-449a-b44f-0325cca9829f;b8b4b113-8649-49d7-a4d3-4310522f19de" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,4);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(e005b527-f8d0-4923-8873-e4ef2c9e7097,1,ClassFeat);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

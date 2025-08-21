@@ -40,8 +40,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="EnjoyTheShow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce5fced2-1ec0-4080-a317-dd9b7da36d90" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8f69043g3ad8g2d46g50c7g377d9bd66866" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,Panache,100,10);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb28d12deg2930g6131g8f3eg6cfd715dd6a3" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -184,7 +185,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BonMot" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb0099d2-b1d9-4c62-8810-6a9c78c09170" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Persuasion,context.Target.GetPassiveSkill(Skill.Perception));" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="ApplyStatus(SELF,Panache,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,Panache,100,10);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd0dc82g6e8bg0e8eg5673ga44c87fb1c16" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h57290e43ga70eg488eg2a6agad9e05f0d582" version="1" />
       </fields>
