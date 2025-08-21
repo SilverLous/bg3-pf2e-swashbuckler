@@ -112,7 +112,7 @@
                     <attribute id="FileSize" type="uint64" value="825247"/>
                     <attribute id="Folder" type="LSString" value="pf2e-swashbuckler_8e2cb17c-4ef3-1bf6-0946-3336c180f633"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="0fee4a65a326bef184eda785d46874a6"/>
+                    <attribute id="MD5" type="LSString" value="34516db71e7da8eadd50e3deb92425ec"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="PF2E Swashbuckler"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -120,7 +120,7 @@
                     <attribute id="PublishHandle" type="uint64" value="5182628"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="8e2cb17c-4ef3-1bf6-0946-3336c180f633"/>
-                    <attribute id="Version64" type="int64" value="36028797018963974"/>
+                    <attribute id="Version64" type="int64" value="36028797018963976"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718583632"/>

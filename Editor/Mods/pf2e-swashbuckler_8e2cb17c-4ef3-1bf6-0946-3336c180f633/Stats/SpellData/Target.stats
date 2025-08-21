@@ -10,7 +10,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat) , MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and CanPrecisionDamage();" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+2d6, MainMeleeWeaponDamageType)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +MainMeleeWeapon - LevelMapValue(PreciseStrikeFlat) , MainMeleeWeaponDamageType)" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,Panache);ApplyStatus(SELF,EffectFinisherUsed);" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_FinisherContainer" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -26,7 +26,6 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784f5957gaa65g9598ge941gce7b318e2b13" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67458ce4g4beag2418g65dbgdb32be874c97" version="4" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+2d6, MainMeleeWeaponDamageType)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RecklessAttack" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RecklessAttack" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;CannotTargetTerrain;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
@@ -62,6 +61,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b63d48ag8804g8c28g9ca6g479a9f547203" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7aa147bagec00g36b1g7c6egf9724276e0ea" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -72,7 +72,10 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(IsCritical()):ApplyStatus(BleedingFinisherDamageCrit,100,-1);IF(not IsCritical()):ApplyStatus(BleedingFinisherDamage,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4911eac2g8a83g0a4dgcd0egce1db12303c1" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5aa5d4c6g343cgea06gfc03g23dc63b4e7ad" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5aa5d4c6g343cgea06gfc03g23dc63b4e7ad" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Disintegrate" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +MainMeleeWeapon - LevelMapValue(PreciseStrikeFlat) , MainMeleeWeaponDamageType);DealDamage(4d6,Slashing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BleedingFinisherDamage,100,3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -97,6 +100,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DISENGAGE_USESTEP,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbc5bf077g9f65g3626g2409gadfea8ec3b29" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h395bf80egfbe5g7c4cg9cd3g1c7d9258e19b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_ExpeditiousRetreat" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -107,6 +111,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(OFFBALANCE,100,2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb67987f1g23dbg1cc1gfcbcg813a131ffebe" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58fa9e3eg0d5ag6ff1gcfcfgfae82336b881" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_WrathfulSmite" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -130,6 +135,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);Force(ShoveDistance,OriginToEntity,Aggressive);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3c8d623gd1bdgd3c6g3a76g45e0e911d186" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab58e797g4447g911egaa76gebf2b83a8568" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -140,6 +146,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3250bc64gfbecg51a4g9c58gf12f185b55eb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2a192e3g59a8g6227gbfb4g76b64f12b93e" version="1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Haste" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -150,6 +157,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd62c89a3g0689g5cdegaef5g94e2bbc892a4" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(Stunning_Finisher_Effect,100,0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0565c386g6182g1ab4g1ac8g1ee46ca80b7d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BlindingSmite" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -176,6 +184,8 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6ff55beg1d73g5c37g0234gec3238803a14" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4d041250g9a1ag1679g241bg1e95be9291be" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source) and DualWielder(context.Source);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_FeintingAttack" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -209,6 +219,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h196e6e3cg052eg8b4dg41a3g4121546bb0a5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafa1e989gfdc9g27a5g88f3gb4fa0796cb6a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
       </fields>
     </stat_object>
   </stat_objects>

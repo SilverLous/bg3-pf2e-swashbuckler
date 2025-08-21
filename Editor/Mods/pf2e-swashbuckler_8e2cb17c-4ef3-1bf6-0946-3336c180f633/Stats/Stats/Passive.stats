@@ -6,10 +6,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfidentFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11aee383gc7cdgf813ga50dg2e221b824f60" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FinisherContainer,AddChildren);UnlockSpell(Target_ConfidentFinisher);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FinisherContainer,AddChildren);UnlockSpell(Target_ConfidentFinisher);UnlockSpell(Projectile_Jump_Rank3Unlock);" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha464d8d5g00e4g08e2g7821gd70133496857" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -30,6 +31,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="RetreatingFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b892119g07bag94cbg4afege431477b5220" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5c05455gbc76gaf05g157fg06b4a7ee1696" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RetreatingFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -47,6 +50,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnbalancingFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17fe2e6bg1c24g6735g94a3gee95014ab727" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf26dab5gf469gabf1g3660gba30e03498bc" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnbalancingFinisher);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -67,6 +72,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdb79a465gc173g62eegf72dga3198afbe6f3" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ImpalingFinisher);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18d903d2g107bg35dag75d9g66891b12b0de" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -95,7 +101,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hab93bb7ag1bf8g136bg78c0g77a1c8d7824e" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BleedingFinisher);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h76057349gfc01g2be0g92ddg5f05e37ea86f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h76057349gfc01g2be0g92ddg5f05e37ea86f" version="2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -105,6 +112,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5175ec8g54bfg4adbgb585gdab6b17f004a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbab1ed61gfe5fgb09fg0ebeg623c1a8fa36f" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DualFinisher);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -114,6 +122,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9bb19edcg5605g9940g4de7g9087aa0c1630" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StunningFinisher);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab093ed1g346dg297eg9b4eg5574d2d96be3" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -134,6 +143,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h153a8ad8gb577g9fa6g54fbg6741b0fc4670" version="2" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasStatus('Panache') or not Combat();" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,Acrobatics); Advantage(Ability,Charisma);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnStatusApply;OnStatusRemove" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -152,6 +162,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf33f5755gbbdbgbc8cg8684ga7cd43684b37" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StumblingFinisher);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a8f55d2gd06cgdc05ga6cegdad108313e00" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -170,6 +181,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h337f41dfg2b8agc38fg3b78g60406f603dc1" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MobileFinisher);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h00656c68gff7bg044fg900bgc81a80429fd9" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -179,7 +191,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h075aa4afg92d8gca32g772cgbbb04467b78b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30728b4fgb4d6g7336g0221gc25aca423594" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PerfectFinisher);IF(SpellId('Target_PerfectFinisher')):Advantage(AttackRoll);" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="b6aa23c3-c96d-42d5-8ffa-8d441d18faa7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -484,6 +496,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ScareToDeath);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdaff3aedg6134gf0b0g7458g451c8935c46e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80a5616fg2df3g8efbg60afgf4823862aab9" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67c956c6-9ecb-4085-aa77-38f0e4b3373b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
