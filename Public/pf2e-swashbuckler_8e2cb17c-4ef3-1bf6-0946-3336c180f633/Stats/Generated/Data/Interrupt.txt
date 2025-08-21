@@ -31,6 +31,7 @@ data "Container" "YesNoDecision"
 data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(2, context.Source);"
 data "Properties" "AdjustRoll(-2);ApplyStatus(OBSERVER_OBSERVER,Panache,100,10);"
 data "Cost" "ReactionActionPoint:1;"
+data "InterruptDefaultValue" "Ask;Enabled"
 
 new entry "Interrupt_OpportuneRiposte"
 type "InterruptData"
