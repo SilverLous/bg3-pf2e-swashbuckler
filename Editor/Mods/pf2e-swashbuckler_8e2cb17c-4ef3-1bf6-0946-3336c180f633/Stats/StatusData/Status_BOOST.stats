@@ -9,6 +9,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
         <field name="Toggle" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54d635cag280bg7f73gcd01g9161436c9c66" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -17,6 +18,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisherDamage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8a6686bd-4af4-45b9-9786-4ee529d54681" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d6,Slashing);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f9a7fc7g8acfg59e8gd27bg86c54b689a50" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfec6377fgaef4gee54g2bfdg30ed9819f152" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Slashing,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -25,6 +29,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="BleedingFinisherDamageCrit" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cadca12f-00fc-4f4a-a1d1-a498901340e8" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(8d6,Slashing);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f0a1be0ga642g723dgb43ag754baab5560f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h22c826d9gf82fg5caeg8599gf0eaec3d9246" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d6,Slashing,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -32,6 +39,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="390d1207-b194-4507-b05b-8aec788e7d73" />
         <field name="Name" type="NameTableFieldDefinition" value="OneForAllBoost" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha0cf9b1agb517g42d7g0476g7c5df6aa1391" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4f106d47ga5f7geac8g067fgab2da80a0eaa" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -53,6 +61,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_PEN_1ATTACK);" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty1Attack,100,2)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty1Attack,100,2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd6a01900gedd4g7b8dg8c11g2f01d5d470ba" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -63,6 +72,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CIRC_PEN_2ATTACK);" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty2Attack,100,2)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(CircumstancePenalty2Attack,100,2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8eddf573g0bd5g5cfagdb7dg9f6b035a97ce" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -78,8 +88,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5834b817-af1a-46d0-9ab3-50cfb5d37f5b" />
         <field name="Name" type="NameTableFieldDefinition" value="EffectFinisherUsed" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-99);Skill(Athletics,-99);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_MainHandAttack'),ModifyUseCosts(Add,Block,1,0));UnlockSpellVariant(NonUnarmedStrikeCheck(),ModifyUseCosts(Add,Block,1,0));UnlockSpellVariant(MeleeUnarmedAttackCheck(),ModifyUseCosts(Add,Block,1,0));" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e6c83bdg4ee5gc8bcgc169gaba072f7da4f" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71c17ece-67f7-480b-9a4a-44110a75689d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e8322a2g56e0g6930gf798gfbfa2079128d" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -89,6 +101,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="70623139-2f32-4c28-8f9a-48f1356fe2be" />
         <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(STUNNED3,100,1)&#xD;&#xA;IF(not IsCritical()):ApplyStatus(STUNNED1,100,1)" />
         <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(STUNNED1,100,0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa7b63d8ge3ffg97f3ge4bagb8973f2a5758" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -106,6 +119,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="BonMotEffect" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h498a0161ge6d1g6f28g0384g022bfad8978c" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(RawAbility,-4,Wisdom);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c39e27bga5c3gfb03g6a12gf34183ffdd8e" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

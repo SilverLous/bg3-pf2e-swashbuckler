@@ -6,9 +6,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="309f22bf-f2bc-4a08-9bd5-e33786eef541" />
         <field name="Name" type="NameTableFieldDefinition" value="BasicFinisher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f124fec-1605-4952-a13f-f61f92cb53f8" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source) and CanUseWeaponActions();" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat) , MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and CanPrecisionDamage();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead();" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +MainMeleeWeapon - LevelMapValue(PreciseStrikeFlat) , MainMeleeWeaponDamageType)" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,Panache);ApplyStatus(SELF,EffectFinisherUsed);" />
@@ -25,7 +25,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PreciseFinisher')):DealDamage(( LevelMapValue(PreciseStrike)));IF(not HasPassive('PreciseFinisher')):DealDamage(( LevelMapValue(PreciseStrike))/2);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExtraAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784f5957gaa65g9598ge941gce7b318e2b13" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67458ce4g4beag2418g65dbgdb32be874c97" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67458ce4g4beag2418g65dbgdb32be874c97" version="5" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RecklessAttack" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RecklessAttack" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;CannotTargetTerrain;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
@@ -39,8 +39,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce5fced2-1ec0-4080-a317-dd9b7da36d90" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8f69043g3ad8g2d46g50c7g377d9bd66866" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,Panache,100,10);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb28d12deg2930g6131g8f3eg6cfd715dd6a3" version="1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb28d12deg2930g6131g8f3eg6cfd715dd6a3" version="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SkillActions" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(EnjoyTheShowEffectCrit,100,1);IF(not IsCritical()):ApplyStatus(EnjoyTheShowEffect,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EnjoyTheShowEffect,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -49,7 +51,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="GoadingFeint" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03ee71a3-27cf-42ff-933f-6941006daa76" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa225a01gb067gc563g0e7egde2e57d5752b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h357df52egc3b9g9c29g1eadgd22b50ba3fc5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h357df52egc3b9g9c29g1eadgd22b50ba3fc5" version="2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(EnjoyTheShowEffectCrit,100,1);IF(not IsCritical()):ApplyStatus(EnjoyTheShowEffect,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EnjoyTheShowEffect,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -86,10 +90,11 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68431bdcge1a9g6eb5g49abgcadc60c903ae" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CannotTargetItems;CannotTargetTerrain;IgnoreVisionBlock;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(OneForAllBoost,100,2);" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a09de2c8-ec46-4c27-a502-bc92cf293fe5,,;9583ecee-cf6c-4735-86db-7ebf1df15eae,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;de006e3f-70fb-4eb7-a98d-d845d15b20e8,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;50696db7-d931-4734-915d-32d038ba99a5,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;244b53cb-dc0f-4932-afd0-ab19c6df1b34,,;c36ed247-2272-492b-99c2-2ca10b014670,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9a8dd09g3fb5geab0g635eg469927aae143" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="554daa9f-ad90-4a2c-8b2e-2ba576e7145a" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SkillActions" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -112,6 +117,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb67987f1g23dbg1cc1gfcbcg813a131ffebe" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h58fa9e3eg0d5ag6ff1gcfcfgfae82336b881" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_WrathfulSmite" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(OFFBALANCE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -158,6 +164,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage( LevelMapValue(PreciseStrike) +max(1,MainMeleeWeapon) - LevelMapValue(PreciseStrikeFlat), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(Stunning_Finisher_Effect,100,0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0565c386g6182g1ab4g1ac8g1ee46ca80b7d" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BlindingSmite" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(Stunning_Finisher_Effect,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -184,7 +191,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6ff55beg1d73g5c37g0234gec3238803a14" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4d041250g9a1ag1679g241bg1e95be9291be" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source) and DualWielder(context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingSneakAttackWeapon(context.Source,false)  and HasStatus('Panache',context.Source) and DualWielder(context.Source)  and CanUseWeaponActions();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_FeintingAttack" />
       </fields>
     </stat_object>
@@ -196,7 +203,10 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="SkillCheck(Skill.Persuasion,context.Target.GetPassiveSkill(Skill.Perception));" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,Panache,100,10);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd0dc82g6e8bg0e8eg5673ga44c87fb1c16" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h57290e43ga70eg488eg2a6agad9e05f0d582" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h57290e43ga70eg488eg2a6agad9e05f0d582" version="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(BonMotEffect,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally();" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BonMotEffect,100,10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

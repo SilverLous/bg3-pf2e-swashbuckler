@@ -90,7 +90,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Source,context.Observer) and SpellId('Target_Demoralize') and IsCritical() and not OBSERVER_TARGET:CharacterLevelGreaterThan(OBSERVER_OBSERVER.CharacterLevel);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(TerrifiedRetreatPush,100,1);ApplyStatus(STUNNED,100,1);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(Fearful,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f4f931dgc139gc7d7g0d27gea656a2422f9" version="1" />
